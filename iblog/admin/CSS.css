@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.userlogo{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.page-title-bar {
+  width: 100%;
+  padding: 10px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-title-bar p{
+  text-decoration: none;
+  border-bottom: 2px solid crimson;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+.page-title-bar a{
+  text-decoration: none;
+  background-color: crimson;
+  padding: 4px 10px;
+  margin: 0 10px;
+  color: wheat;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+/*-------------------------- table ------------------------------*/
+table {
+  width: 80%;
+  border: 5px solid royalblue;
+  text-align: center;
+  margin: 50px auto;
+  counter-reset: count-no;
+}
+th {
+  background-color: slateblue;
+  font-size: 2em;
+}
+td {
+  background-color: wheat;
+  font-size: 2rem;
+  padding: 4px 0px;
+  text-decoration: none;
+}
+
+.count::before{
+    counter-increment: count-no;
+    content: counter(count-no);
+}
+.delete,
+.update {
+    text-decoration: none;
+    background-color: crimson;
+    color: wheat;
+width: 100%;
+height: 100%;
+    font-weight: bold; padding:4px 10px; border-radius:10px; font-size:1.5rem;
+}
+table{
+  counter-reset: count-no;
+}
+.count::before{
+  counter-increment: count-no;
+  content: counter(count-no);
+}
+/* pagination */
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination .page-li {
+  list-style: none;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+a {
+  background-color: rgba(59, 105, 241, 0.952);
+}
+
+.pagination .page-li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 8px 15px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+
+  border-radius: 10px;
+}
+
+.active {
+  background-color: rgba(6, 42, 153, 0.952);
+}
+/* ------------------------------------------login page -style------------------------------------------------------- */
+.loginForm {
+  background-color: #1e2833;
+  padding: 40px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  box-shadow: 3px 3px 4px rgb(0 0 0 / 20%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 400px;
+}
+
+.loginForm form {
+  width: 100%;
+}
+
+.login-btn {
+  background: #214a80;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
+  width: 100%;
+  color: white;
+  transition: .2s;
+}
+
+.login-btn:hover {
+  background: #1369da;
+
+}
+
+
+#Lock-img {
+  margin: 8px auto 25px auto;
+}
+
+.input-field {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 0;
+  margin: 10px auto;
+  text-align: left;
+  width: 100%;
+}
+
+.Login-label{
+  position: absolute;
+  color: #6f7a85;
+  top: 10px;
+  left: 6px;
+  transition: 0.4s;
+}
+
+/* input  */
+.Login-input {
+  position: absolute;
+  border: none;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 35px;
+  border-bottom: 2px solid #6f7a85;
+  color: #3391fd;
+  font-size: 15px;
+  padding: 1px 7px;
+}
+
+.underline-input {
+  position: absolute;
+  display: inline-block;
+  background-color: #097afc;
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  transition: 0.4s;
+}
+/* -------------------------------------------login page style ending--------------------------- */
+
+
+/* ------------------------headetr section------------------------------------- */
+a {
+  text-decoration: none;
+
+  font: bolder;
+}
+
+.header {
+  background-color: rgb(219, 46, 81);
+  width: 100%;
+  padding: 15px 200px 2px 200px;
+}
+
+.header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .top-header img {
+  width: 50px;
+  height: 50px;
+}
+
+.header .top-header .top-header-link {
+  font-size: 1.7rem;
+  background-color: crimson;
+  padding: 10px 20px;
+  color: wheat;
+  font-weight: bolder;
+  text-decoration: none;
+
+}
+
+.header .nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.header .nav .navlink {
+  font-size: 1.3rem;
+  color: wheat;
+  padding: 7px 15px;
+  background-color: royalblue;
+  margin: 0 10px;
+}
+/* -------------------end header section--------------------- */
+
+

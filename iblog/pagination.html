@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination .page-li {
+        list-style: none;
+        padding: 5px;
+        margin: 10px 0;
+
+    }
+
+    a {
+        background-color: rgba(59, 105, 241, 0.952);
+
+    }
+
+    .pagination .page-li a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 8px 15px;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+
+        border-radius: 10px;
+    }
+
+    .active {
+        background-color: rgba(6, 42, 153, 0.952);
+    }
+</style>
+
+<body>
+    <ul class="pagination">
+        <li class="page-li"><a href="" class="active">Prev</a></li>
+        <li class="page-li"><a href="">1</a></li>
+        <li class="page-li"><a href="" class="active">2</a></li>
+        <li class="page-li"><a href="">3</a></li>
+        <li class="page-li"><a href="">Next</a></li>
+
+    </ul>
+</body>
+
+</html>

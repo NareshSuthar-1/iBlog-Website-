@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 100px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+/* category php codeeeee start------------------------- */
+
+.post-left {
+  width: 60%;
+}
+.post-right {
+  width: 35%;
+}
+
+/* recent blog syle ----------------------- ASIDE PAGE -----------------*/
+/* search bov */
+.serch-box,
+.recent-blog {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-shadow: 1px 1px 10px rgba(14, 15, 19, 0.527);
+}
+
+.serch-box .title,
+.title {
+  padding: 5px 8px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border-left: 5px solid royalblue;
+  margin-bottom: 10px;
+}
+
+.serch-box .input-box {
+}
+
+.serch-box .input-box input {
+  margin: 5px 0;
+  outline: 0;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.5s;
+  padding: 5px;
+  border: 2px solid rgba(52, 57, 66, 0.582);
+}
+
+.serch-box .input-box input:focus {
+  border: 0;
+  border: 2px solid royalblue;
+}
+/* search end */
+.recent-blog {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.recent-blog .rect-blog-container {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.recent-blog .rect-blog-container {
+}
+
+.recent-blog .rect-blog-container .blog-rect {
+  margin: 10px auto;
+  display: flex;
+  border: 1px solid black;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-img {
+  width: 30%;
+  margin: 12px 0;
+  height: 100px;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-content {
+  width: 70%;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-content .blog-title {
+  font-size: 30px;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-content .about-blog {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 8px 0 13px 0;
+}
+
+.recent-blog
+  .rect-blog-container
+  .blog-rect
+  .blog-content
+  .about-blog
+  .blog-category {
+  text-transform: uppercase;
+  color: black;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-content .about-blog .date {
+  margin-left: 7px;
+  text-transform: uppercase;
+}
+
+i {
+  color: royalblue;
+}
+
+/* readmore btn */
+.recent-blog .rect-blog-container .blog-rect .blog-content .read-more {
+  width: 110px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(128, 156, 240);
+  padding: 3px 10px;
+  margin: 10px 0 8px 0;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.recent-blog .rect-blog-container .blog-rect .blog-content .read-more:hover {
+  background-color: royalblue;
+}
+/* ASIDE BLOG ENDING-------------------------- */

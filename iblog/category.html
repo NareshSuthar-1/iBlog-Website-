@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="post-left col">
+            <div class="Category-Title">
+                Category Name
+            </div>
+            <div class="Category-blog">
+                <div class="blog-cat">
+                    <a class="blog-img" href="single.php?id=<?php echo $row['post_id']; ?>">
+                        <img src="./admin/uplodeIMG/<?php echo $row['post_img'] ?>" alt=""></a>
+                    <div class="blog-content">
+                        <a class="blog-title" href="single.php?id=<?php echo $row['post_id']; ?>">
+                            <!-- <?php echo $row['title']; ?> -->
+                            TITLE
+                        </a>
+                        <div class="about-blog">
+                            <a class="blog-category" href="">
+                                <i class="fas fa-link" style="font-size: .7rem;"></i>
+
+                                <!-- <?php echo $row['c_name']; ?> -->
+                                PHP
+                            </a>
+                            <div class="blog-autor">
+                                <i class="fas fa-user"></i>
+                                hello
+                                <!-- <?php echo $row['name']; ?> -->
+                            </div>
+
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+
+                                <!-- <?php echo $row['post_date']; ?> -->
+                                12 Nov
+                            </div>
+                        </div>
+                        <div class="description">
+                            <!-- <?php echo $row['descriptions']; ?> -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temt, deleniti. Sunt molestias,
+                            consequatur laborum deserunt dolore beatae odit. Vero, libero eligendi?
+                        </div>
+                        <a class="read-more " href="single.php?id=<?php echo $row['post_id']; ?>">
+                            Read More
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="post-right col">
+            <div class="aside">
+                <div class="serch-box">
+                    <div class="title">
+                        Search
+                    </div>
+                    <div class="input-box">
+                        <input type="search" name="seach" id="search" placeholder="Search..">
+                    </div>
+                </div>
+                <div class="recent-blog">
+                    <div class="title">
+                        Recant Post
+                    </div>
+                    <div class="rect-blog-container">
+                        <div class="blog-rect">
+                            <a class="blog-img" href="single.php?id=<?php echo $row['post_id']; ?>">
+                                <img src="./admin/uplodeIMG/<?php echo $row['post_img'] ?>" alt=""></a>
+
+                            <div class="blog-content">
+                                <a class="blog-title" href="single.php?id=<?php echo $row['post_id']; ?>">
+                                    <!-- <?php echo $row['title']; ?> -->
+                                    hello
+                                </a>
+                                <div class="about-blog">
+                                    <a class="blog-category" href="">
+                                        <!-- <?php echo $row['c_name']; ?> -->
+                                        <i class="fas fa-link" style="font-size: .7rem;"></i>
+                                        PHP
+                                    </a>
+
+                                    <div class="date">
+                                        <i class="far fa-calendar-alt"></i>
+                                        <!-- <?php echo $row['post_date']; ?> -->
+                                        12 NOV
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <!-- <?php echo $row['descriptions']; ?> -->
+                                </div>
+                                <a class="read-more " href="single.php?id=<?php echo $row['post_id']; ?>">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
